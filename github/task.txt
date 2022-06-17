@@ -1,0 +1,10 @@
+task update:
+
+automated the website do download the file that is asking for location to store the file
+import the os and get the location of current directory
+in firefox, using firefox options get the file type and location in set preference that is stored in variable
+after that variable is passed to the webdriver and processed it
+automated the uploading a file, using the send keys method send the location of the file in input type elements
+Hands on the commands of linux for testing purpose like how to find hdden files, using touch command creating empty file and etc.,
+automated the account creating of gitup, first using webelement send the username and email, password
+then tried to create a account using the pom of selenium with testcase

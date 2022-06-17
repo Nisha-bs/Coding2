@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-05-03 14:53:06</p>
+                <p class='attribute'><strong>Duration: </strong>15.56 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.LoginTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value="Log in"]"}
+  (Session info: chrome=100.0.4896.127)
+Stacktrace:
+#0 0x55edd095ead3 <unknown>
+#1 0x55edd06be568 <unknown>
+#2 0x55edd06f4c46 <unknown>
+#3 0x55edd06f4e01 <unknown>
+#4 0x55edd0727a64 <unknown>
+#5 0x55edd071261d <unknown>
+#6 0x55edd0725824 <unknown>
+#7 0x55edd07124e3 <unknown>
+#8 0x55edd06e7d1a <unknown>
+#9 0x55edd06e8e75 <unknown>
+#10 0x55edd098cefd <unknown>
+#11 0x55edd09a619b <unknown>
+#12 0x55edd098ec65 <unknown>
+#13 0x55edd09a6ec8 <unknown>
+#14 0x55edd0982360 <unknown>
+#15 0x55edd09c2a68 <unknown>
+#16 0x55edd09c2be8 <unknown>
+#17 0x55edd09dc7fd <unknown>
+#18 0x7f19cb267609 <unknown>
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/home/nisha/PYTHON/SELENIUM/Unittest_based_POM_project/testcases/LoginTest.py", line 27, in test_login
+    lp.setLogin()
+  File "/home/nisha/PYTHON/SELENIUM/Unittest_based_POM_project/page_objects/LoginPage.py", line 21, in setLogin
+    self.driver.find_element_by_xpath(self.login_user_login).click()
+  File "/home/nisha/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 521, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/nisha/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 1248, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/home/nisha/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 425, in execute
+    self.error_handler.check_response(response)
+  File "/home/nisha/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value="Log in"]"}
+  (Session info: chrome=100.0.4896.127)
+Stacktrace:
+#0 0x55edd095ead3 <unknown>
+#1 0x55edd06be568 <unknown>
+#2 0x55edd06f4c46 <unknown>
+#3 0x55edd06f4e01 <unknown>
+#4 0x55edd0727a64 <unknown>
+#5 0x55edd071261d <unknown>
+#6 0x55edd0725824 <unknown>
+#7 0x55edd07124e3 <unknown>
+#8 0x55edd06e7d1a <unknown>
+#9 0x55edd06e8e75 <unknown>
+#10 0x55edd098cefd <unknown>
+#11 0x55edd09a619b <unknown>
+#12 0x55edd098ec65 <unknown>
+#13 0x55edd09a6ec8 <unknown>
+#14 0x55edd0982360 <unknown>
+#15 0x55edd09c2a68 <unknown>
+#16 0x55edd09c2be8 <unknown>
+#17 0x55edd09dc7fd <unknown>
+#18 0x7f19cb267609 <unknown>
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 15.56 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
